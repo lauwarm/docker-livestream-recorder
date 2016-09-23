@@ -15,7 +15,6 @@ WORKDIR /home
 ADD https://gist.githubusercontent.com/lauwarm/b39f804c32a938015840/raw/48da22184b9c00bf31cd247b80fca2bb21610cc4/livestream-recorder.sh /home
 
 # alter permission
-#RUN chmod +x livestream-recorder.sh
 CMD ["chmod", "+x", "livestream-recorder.sh"]
 
 # start the script to record livestreams
