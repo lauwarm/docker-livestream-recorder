@@ -1,6 +1,9 @@
 FROM alpine:edge
 MAINTAINER lauwarm <lauwarm@mailbox.org>
 
+# add testing repository
+RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories
+
 # update the default application repository source list and install needed packages
 RUN apk update && \
     apk add livestreamer && \
