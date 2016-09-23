@@ -12,7 +12,7 @@ apk add livestreamer
 WORKDIR /home
 
 # download livestream-recorder.sh from gist
-ADD https://gist.githubusercontent.com/lauwarm/b39f804c32a938015840/raw/48da22184b9c00bf31cd247b80fca2bb21610cc4/livestream-recorder.sh
+ADD https://gist.githubusercontent.com/lauwarm/b39f804c32a938015840/raw/48da22184b9c00bf31cd247b80fca2bb21610cc4/livestream-recorder.sh /home
 
 # alter permission
 #RUN chmod +x livestream-recorder.sh
