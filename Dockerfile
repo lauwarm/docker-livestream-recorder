@@ -6,7 +6,7 @@ RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/reposit
 
 # update the default application repository source list and install needed packages
 RUN apk update && \
-    apk add livestreamer && \
+apk add livestreamer
 
 # set workdir
 WORKDIR /home
