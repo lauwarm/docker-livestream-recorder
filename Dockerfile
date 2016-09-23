@@ -2,7 +2,7 @@ FROM alpine:edge
 MAINTAINER lauwarm <lauwarm@mailbox.org>
 
 # update the default application repository source list and install needed packages
-RUN apg update && \
+RUN apk update && \
     apk add livestreamer && \
 
 # set workdir
